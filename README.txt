@@ -1,0 +1,1 @@
+This application was build with MongoDB, Socket.IO, plain JS and some Bootstrap 4.
