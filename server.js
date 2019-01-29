@@ -1,8 +1,13 @@
 const mongo = require('mongodb').MongoClient;
 const client = require('socket.io').listen(4000).sockets;
+require('dotenv').config();
 
+//Importing envirometal var from '.env' file
+var url = process.env.MONGOLAB_URI;
+
+// 'mongodb://127.0.0.1/mongochat'
 //Connecting to Mongo
-mongo.connect('mongodb://127.0.0.1/mongochat', (err, db) => {
+mongo.connect(url, (err, db) => {
     if(err){
         console.log(err);
     }
