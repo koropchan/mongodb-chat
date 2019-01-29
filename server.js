@@ -1,5 +1,5 @@
 const mongo = require('mongodb').MongoClient;
-const client = require('socket.io').listen(4000).sockets;
+const client = require('socket.io').listen('https://mongochat-1.herokuapp.com/').sockets;
 require('dotenv').config();
 
 //Importing envirometal var from '.env' file
