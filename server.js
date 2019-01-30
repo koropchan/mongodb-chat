@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongo = require('mongodb').MongoClient;
 
 const app = require('express')();
-var server = require('http').Server(app);
+const server = require('http').Server(app);
 const client = require('socket.io')(server);
 
 server.listen(process.env.PORT || 4000).sockets;
@@ -11,15 +11,9 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
   });
 
-//Importing envirometal var from '.env' file
-var url = {
-    host: process.env.DB_HOST,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS
-  };
-
+  
 //Connecting to Mongo
-mongo.connect(url, (err, db) => {
+mongo.connect(process.env.MONGOLAB_URI, (err, db) => {
     if(err){
         console.log(err);
     }
