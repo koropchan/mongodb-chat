@@ -69,7 +69,7 @@
             }
 
             // Connect to Socket.IO
-            var socket = io.connect(process.env.PORT || 'http://mongochat-1.herokuapp.com');
+            var socket = io.connect('http://localhost');
 
             //Checking for connection
             if(socket !== undefined){
