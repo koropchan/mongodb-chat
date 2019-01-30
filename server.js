@@ -1,10 +1,10 @@
 require('dotenv').config();
 const mongo = require('mongodb').MongoClient;
-
 const app = require('express')();
 const server = require('http').Server(app);
 const client = require('socket.io')(server);
 
+//Listening to port
 server.listen(process.env.PORT || 4000).sockets;
 
 app.get('/', function (req, res) {
