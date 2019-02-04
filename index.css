@@ -1,0 +1,30 @@
+#messages {
+    height:300px;
+}
+.card {
+    background-color: transparent;
+}
+#clear {
+    background-color: rgb(255, 147, 74);
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+}
+.text-center {
+    font-family: 'Roboto Mono', monospace;
+}
+#messages {
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent;
+}
+#chat {
+    background-image: url('/backgr.jpg');
+    background-position: center;
+    height: 100%;
+    color: grey;   
+}
+#username {
+    background-color: transparent;
+}
+#textarea {
+    background-color: transparent;
+}

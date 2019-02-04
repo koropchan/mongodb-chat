@@ -7,6 +7,8 @@ const client = require('socket.io')(server);
 //Listening to port
 server.listen(process.env.PORT || 4000).sockets;
 
+app.use(require('express').static(__dirname + '/'));
+
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
   });
