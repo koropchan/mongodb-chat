@@ -1,12 +1,12 @@
 {
-  "name": "mongochat",
+  "name": "realtime-chat",
   "version": "1.0.0",
-  "description": "Chat app using MongoDB and Socket.IO",
+  "description": "Chat app using MongoDB, Node.js and Socket.IO",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Stanislav Koropchan",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.2.0",
