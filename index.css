@@ -1,3 +1,11 @@
+html {
+    background-color: rgb(219, 219, 219);
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
 #chat {
     background-image: url('/backgr3.jpg');
     background-position: center;
