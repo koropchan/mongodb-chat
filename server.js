@@ -48,7 +48,7 @@ mongo.connect(process.env.MONGOLAB_URI, (err, db) => {
             //Cheking for name and message
             if(name == '' || message == ''){
                 //Sending error satus
-                sendStatus('Please enter name and status');
+                sendStatus('Please enter name and message');
             } else {
                 //Insert message
                 chat.insert({name: name, message: message}, () => {
