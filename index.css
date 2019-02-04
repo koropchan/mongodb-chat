@@ -8,11 +8,18 @@ body {
 
 #chat {
     background-image: url('/backgr3.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-color: grey;
     height: 100%;
     border-radius: 10px;  
+}
+@media (max-width: 768px){
+    #chat {
+        background-image: url('/backgr3-mobile.jpg');
+        background-attachment: fixed;
+    }
 }
 
 #username {
